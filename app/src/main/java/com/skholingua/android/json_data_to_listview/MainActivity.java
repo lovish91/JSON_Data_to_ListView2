@@ -84,7 +84,7 @@ public class MainActivity extends Activity {
 				JSONObject json = new JSONObject(content);
 
 				JSONArray jsonArray = json.getJSONArray(TAG_OS);
-				for (int i = k ; i < k + 4; i++) {
+				for (int i = 0 ; i < 4; i++) {
 					JSONObject c = jsonArray.getJSONObject(i);
 					// Storing JSON item in a Variable
 					String name = c.getString(TAG_NAME);
